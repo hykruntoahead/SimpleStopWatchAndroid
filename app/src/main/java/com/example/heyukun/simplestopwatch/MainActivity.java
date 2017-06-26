@@ -19,19 +19,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private boolean isPlaying = false;
 
-    private Handler mHandler = new Handler(
-            new Handler.Callback() {
-                @Override
-                public boolean handleMessage(Message msg) {
-                    Log.i("handleMessage","handleMessage-----");
-
-                    return false;
-                }
-            }
-    );
-
-
-//    private Runnable mRunnable;
+    private Handler mHandler = new Handler();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -76,7 +64,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     }
                 },100);
                 isPlaying = true;
-//                mHandler.postDelayed(mRunnable,100);
                 mPauseImg.setEnabled(true);
                 mPlayImg.setEnabled(false);
 

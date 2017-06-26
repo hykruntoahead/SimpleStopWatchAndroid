@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SimpleStopWatch</string>
+    <string name="label_counter">0.0</string>
+    <string name="reset">Reset</string>
+</resources>
